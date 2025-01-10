@@ -21,6 +21,12 @@ pipeline {
         echo 'app in pre-prod'
       }
     }
+    stage('input'){
+      steps{
+        input('Do you want to deploy app in prod')
+        echo 'this is waiting for user approval for deploy app in prod'
+      }
+    }
      stage('prod'){
       steps{
         echo 'app in prod'
