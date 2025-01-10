@@ -32,7 +32,7 @@ pipeline {
       echo 'app is successfully deploy in prod'
     }
     failures{
-      echo 'app isn't deploy in prod'
+      echo "app isn't deploy in prod"
     }
   }
 }
