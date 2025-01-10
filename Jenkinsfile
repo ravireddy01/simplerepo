@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  parameters{
+    choice(name: 'Environment',choices: ['DEV', 'PROD', 'TEST'], description: 'select specific environment')
+  }
   stages{
     stage('git-code'){
       steps{
