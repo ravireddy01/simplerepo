@@ -2,7 +2,7 @@ pipeline {
   agent any
   // triggers{
   //   cron('*/2 * * * *')
-  }
+  // }
   parameters{
     choice(name: 'Environment',choices: ['DEV', 'PROD', 'TEST'], description: 'select specific environment')
   }
